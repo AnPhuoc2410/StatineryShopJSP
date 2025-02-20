@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-form button {
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #e43a1f;
+}
+
+.avatar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-container img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.avatar-container:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu ul li a,
+.dropdown-menu ul li form button {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.error_message {
+    color: red;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e43a1f;
+}
+
+button i {
+    pointer-events: none;
+}
+
+.delete-button {
+    color: #ff4b2b;
+    text-decoration: none;
+}
+
+.delete-button:hover {
+    color: #e43a1f;
+}
+
+.product-image {
+    max-width: 100px; /* Adjust the max-width as per your design */
+    max-height: 100px; /* Adjust the max-height as per your design */
+}
